@@ -1,0 +1,99 @@
+* {
+	transition: all .1s ease-in;
+}
+body {
+	margin: 20px;	
+	background-color: #3B3F45;
+	font-family: Trebuchet MS”, Trebuchet, Arial, sans-serif;	
+	margin: 0;
+	background-image: url(img/Fruit-Pattern-Background.png);
+}
+header {
+	width: 100%;
+	height: 100px;
+	display: 	table;	
+}
+.text {
+	vertical-align: middle;
+	display: 	table-cell;	
+}
+header, footer {
+	background-color: rgba(0, 0, 0, .8);
+	color: #EB7E7F;
+	text-align: center;
+}
+main {
+	width: 1000px;
+	margin: 30px auto;	
+	color: #fff;
+}
+ul li {
+	list-style-type: none;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	transition: all 1.2s;
+}
+input {
+ margin: 17px;
+
+}
+ul li:nth-child(odd) {
+	background: rgba(31,31,31,.9);
+}
+ul li:nth-child(even) {
+	background: rgba(0,0,40,.8);
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+.check {
+	width: 25px;
+	height: 25px;
+	float: left;
+	background-color: #000;
+}
+ul li span {
+	color: #C4BEC1;
+	font-size: 15px;	
+}
+ul li span::before {
+	content: 	"( "
+}
+ul li span::after {
+	content: 	" )"
+}
+ul li:hover {
+	background: rgba(255,255,255,.5);
+	box-shadow: inset 0px 3px 0px 0px #FFF,
+	inset 0px -3px 0px 0px #FFF;
+	width: 106%;
+	margin-left: -30px;
+	border-radius: 50px;
+
+}
+.check:checked ~ .row {
+	text-decoration: line-through;
+	color: #A39FB3;
+}
+.row {
+	height: 60px;	
+	width: 100%;
+}
+.row:active {
+	background: #EB7E7F;
+}
+footer {
+		width: 1000px;	
+		height: 80px;	
+		margin: 60px auto;
+		line-height: 80px;		
+}
+
+.row, input {
+	cursor: pointer;
+}
